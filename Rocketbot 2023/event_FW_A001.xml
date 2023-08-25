@@ -1,0 +1,952 @@
+<!-- ################################################################################################################# -->
+<!-- ################################# COMIENZO DEL XML CONTROL DE AFILIACIONES  ##################################### -->
+<!-- ################################################################################################################# -->
+
+<!-- Archivo de configuraciones para el control y notificación de eventos y excepciones -->
+<!-- Nombre del Bot: RPA EXTORNO MEMBRECIA -->
+<!-- Versión: 2.0 -->
+
+<MENSAJERIA>
+	<!--****************************************************************************************************************************-->
+	<!--************************************** DESARROLLO DESARROLLO DESARROLLO DESARROLLO *****************************************-->
+	<!--****************************************************************************************************************************-->
+	<Development>
+		<!-- CONFIGURACIONES PREVIAS PARA EL ENVIO DE CORREOS -->
+		<metodoConexion>Servidor</metodoConexion> <!-- opciones: Outlook o Servidor -->
+		<from>renzowupuy@outlook.com,</from>
+		<host>10.20.41.74</host>
+		<port>25</port>
+		<!--************************************* INICIO: EXCEPCIONES DE PROCESO (TO Y CC)******************************************-->
+		<!-- ====================================================================================================================== -->
+		<ERRORES>
+		<!--Destinatarios por defecto cuando no se definan destinatarios especificos -->						
+			<ERR_DEFAULT>
+			<!-- ########################################################################################################### -->
+			<!-- DESTINATARIOS ADMINISTRADORES TECNICOS -->
+			<!-- ########################################################################################################### -->
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+			<!-- ########################################################################################################### -->	
+			<!-- DESTINATARIOS USUARIOS  -->
+			<!-- ########################################################################################################### -->					
+				<to_user></to_user>
+				<cc_user></cc_user>
+			<!-- ########################################################################################################### -->
+			<!-- OTROS DATOS -->
+			<!-- ########################################################################################################### -->			
+				<vLog>SI</vLog> <!-- Se genera un log de emergencia para auditorías o no -->
+				<vMail>SI</vMail> <!-- Se envpia correo o sólo se muestra el pop up -->
+				<vPantalla>SI</vPantalla> <!-- si se mostrará el pop up del mensaje o no -->
+				<vTiempoPantalla>5</vTiempoPantalla> <!-- cuanto rato estará el mensaje en pantalla, Vacio es que estará siempre -->
+			</ERR_DEFAULT>
+
+		<!-- ERRORES PROPIOS DEL BOT -->
+		<!-- =============================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 01 - ERROR GENERAL AL EJECUTAR LA TAREA CORE DEL PROCESO --> 
+			<!-- ########################################################################################################### -->
+			<ERR001>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla>
+			</ERR001>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 02 - ERROR NO SE CARGÓ LA PÁGINA VERISMART CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR002>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR002>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 03 - ERROR NO SE DESCARGÓ PORTFOLIO CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR003>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR003>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 04 - ERROR NO SE DESCARGO VENTAS CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR004>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR004>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 05 - ERROR NO SE CARGÓ LA PÁGINA DE DINNER CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR005>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR005>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 06 - ERROR NO SE CARGÓ LA PÁGINA DE AMEX CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR006>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR006>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 07 - ERROR NO SE CARGÓ LA PÁGINA DE NIUBIZ CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR007>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR007>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 08 - ERROR NO SE DESCARGO EL ARCHIVO DE AFILIACIONES DE VISA --> 
+			<!-- ########################################################################################################### -->
+			<ERR008>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR008>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 09 - ERROR NO SE ENCONTRO CORREOS DE RESPUESTA DE BANCOS --> 
+			<!-- ########################################################################################################### -->
+			<ERR009>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR009>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 10 - ERROR NO SE VISUALIZO LAS DESAFILIACIONES DE NIUBIZ --> 
+			<!-- ########################################################################################################### -->
+			<ERR010>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user></to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR010>
+		</ERRORES>
+		<!-- ====================================================================================================================== -->
+		<!-- ################################## [FIN]: EXCEPCIONES DE PROCESO (TO Y CC) ########################################### -->
+		<!-- ====================================================================================================================== -->
+		
+		<!-- ====================================================================================================================== -->
+		<!-- ######################################### INICIO: EVENTOS DE PROCESO (TO Y CC) ########################################-->
+		<!-- ====================================================================================================================== -->
+		<EVENTOS>
+		<!-- PERSONALIZACION DE EVENTOS -->
+		<!-- =============================================================================================================== -->
+			<EVE_DEFAULT>
+			<!-- ########################################################################################################### -->
+			<!-- DESTINATARIOS ADMINISTRADORES TECNICOS -->
+			<!-- ########################################################################################################### -->
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+			<!-- ########################################################################################################### -->	
+			<!-- OTROS DATOS  -->
+			<!-- ########################################################################################################### -->
+				<vLog>SI</vLog> <!-- SI: Se genera un log de auditorías | NO: No se genera un log de auditorías -->
+				<vMail>SI</vMail> <!-- SI: Se envía correo | NO: No se envía correo -->
+				<vPantalla>NO</vPantalla> <!-- SI: Se mostrará el pop up del mensaje | NO: No se mostrará el pop up del mensaje -->
+				<vTiempoPantalla>0</vTiempoPantalla> <!-- Tiempo de visualización en segundos del pop up, si se deja vacío se cerrará en 30 segundos -->
+			</EVE_DEFAULT> 
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE CARGA DE XML CORRECTA  -->
+			<!-- ########################################################################################################### -->
+			<EVE_XML>
+				<vLog>NO</vLog> 
+				<vMail>NO</vMail>
+			</EVE_XML>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE CREACION DE CARPETAS CORRECTAS  -->
+			<!-- ########################################################################################################### -->
+			<EVE_CARP>
+				<vLog>SI</vLog> 
+				<vMail>NO</vMail>
+			</EVE_CARP>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE INICIO DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_INI>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+			</EVE_INI>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE FINALIZACION DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_FIN>
+				<vLog>SI</vLog>
+				<vMail>SI</vMail>
+			</EVE_FIN>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE INICIO DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_INI2>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+			</EVE_INI2>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE FINALIZACION DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_FIN2>
+				<vLog>SI</vLog>
+				<vMail>SI</vMail>
+			</EVE_FIN2>
+			
+		<!--EVENTOS PROPIOS DEL BOT -->
+		<!-- =========================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- EVE001 - SE TERMINO LA VALIDACION DE CLIENTES BCP --> 
+			<!-- ########################################################################################################### -->
+			<EVE001>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE001>
+			<!-- ########################################################################################################### -->
+			<!-- EVE002 - SE TERMINO LA VALIDACION DE CLIENTES BBVA --> 
+			<!-- ########################################################################################################### -->
+			<EVE002>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE002>
+			<!-- ########################################################################################################### -->
+			<!-- EVE003 - SE TERMINO LA VALIDACION DE CLIENTES SCB --> 
+			<!-- ########################################################################################################### -->
+			<EVE003>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE003>
+			<!-- ########################################################################################################### -->
+			<!-- EVE004 - SE TERMINO LA VALIDACION DE CLIENTES IBK --> 
+			<!-- ########################################################################################################### -->
+			<EVE004>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE004>
+			<!-- ########################################################################################################### -->
+			<!-- EVE005 - SE TERMINO LA VALIDACION DE CLIENTES DINNER --> 
+			<!-- ########################################################################################################### -->
+			<EVE005>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE005>
+			<!-- ########################################################################################################### -->
+			<!-- EVE006 - SE TERMINO LA VALIDACION DE CLIENTES AMEX --> 
+			<!-- ########################################################################################################### -->
+			<EVE006>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE006>
+			<!-- ########################################################################################################### -->
+			<!-- EVE007 - SE TERMINO LA VALIDACION DE CLIENTES VISA --> 
+			<!-- ########################################################################################################### -->
+			<EVE007>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE007>
+		</EVENTOS>
+		<!-- ====================================================================================================================== -->
+		<!-- ################################## [FIN]: EVENTOS DE PROCESO (TO Y CC) ############################################### -->
+		<!-- ====================================================================================================================== -->
+		
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- [FINAL]: VARIABLES DEPENDIENTES DEL ENTORNO/AMBIENTE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	</Development>
+	
+	<!-- __________________________________________________________________________________________________________________________ -->
+	<!-- __________________________________________________________________________________________________________________________ -->
+
+	<Production>
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- [INICIO]: VARIABLES DEPENDIENTES DEL ENTORNO/AMBIENTE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	
+		<!-- CONFIGURACIONES PREVIAS PARA EL ENVIO DE CORREOS -->
+		<metodoConexion>Servidor</metodoConexion> <!-- opciones: Outlook o Servidor -->
+		<from>soporterpa@dignita.tech</from>
+		<host>10.20.41.74</host>
+		<port>25</port>
+		<!--************************************* INICIO: EXCEPCIONES DE PROCESO (TO Y CC)******************************************-->
+		<!-- ====================================================================================================================== -->
+		<ERRORES>
+		<!--Destinatarios por defecto cuando no se definan destinatarios especificos -->						
+			<ERR_DEFAULT>
+			<!-- ########################################################################################################### -->
+			<!-- DESTINATARIOS ADMINISTRADORES TECNICOS -->
+			<!-- ########################################################################################################### -->
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+			<!-- ########################################################################################################### -->	
+			<!-- DESTINATARIOS USUARIOS  -->
+			<!-- ########################################################################################################### -->					
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+			<!-- ########################################################################################################### -->
+			<!-- OTROS DATOS -->
+			<!-- ########################################################################################################### -->			
+				<vLog>SI</vLog> <!-- Se genera un log de emergencia para auditorías o no -->
+				<vMail>SI</vMail> <!-- Se envpia correo o sólo se muestra el pop up -->
+				<vPantalla>SI</vPantalla> <!-- si se mostrará el pop up del mensaje o no -->
+				<vTiempoPantalla>5</vTiempoPantalla> <!-- cuanto rato estará el mensaje en pantalla, Vacio es que estará siempre -->
+			</ERR_DEFAULT>
+
+		<!-- ERRORES PROPIOS DEL BOT -->
+		<!-- =============================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 01 - ERROR GENERAL AL EJECUTAR LA TAREA CORE DEL PROCESO --> 
+			<!-- ########################################################################################################### -->
+			<ERR001>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla>
+			</ERR001>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 02 - ERROR NO SE CARGÓ LA PÁGINA VERISMART CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR002>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR002>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 03 - ERROR NO SE DESCARGÓ PORTFOLIO CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR003>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR003>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 04 - ERROR NO SE DESCARGO VENTAS CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR004>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR004>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 05 - ERROR NO SE CARGÓ LA PÁGINA DE DINNER CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR005>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR005>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 06 - ERROR NO SE CARGÓ LA PÁGINA DE AMEX CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR006>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR006>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 07 - ERROR NO SE CARGÓ LA PÁGINA DE NIUBIZ CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR007>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR007>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 08 - ERROR NO SE DESCARGO EL ARCHIVO DE AFILIACIONES DE VISA --> 
+			<!-- ########################################################################################################### -->
+			<ERR008>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR008>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 09 - ERROR NO SE ENCONTRO CORREOS DE RESPUESTA DE BANCOS --> 
+			<!-- ########################################################################################################### -->
+			<ERR009>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR009>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 10 - ERROR NO SE VISUALIZO LAS DESAFILIACIONES DE NIUBIZ --> 
+			<!-- ########################################################################################################### -->
+			<ERR010>
+				<to_adm>soporterpa@dignita.tech</to_adm>
+				<cc_adm></cc_adm>
+				<to_user>soporterpa@dignita.tech</to_user>
+				<cc_user></cc_user>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+				<vPantalla>SI</vPantalla> 
+				<vTiempoPantalla>5</vTiempoPantalla> 
+			</ERR010>
+		</ERRORES>
+		<!-- ====================================================================================================================== -->
+		<!-- ################################## [FIN]: EXCEPCIONES DE PROCESO (TO Y CC) ########################################### -->
+		<!-- ====================================================================================================================== -->
+		
+		<!-- ====================================================================================================================== -->
+		<!-- ######################################### INICIO: EVENTOS DE PROCESO (TO Y CC) ########################################-->
+		<!-- ====================================================================================================================== -->
+		<EVENTOS>
+		<!-- PERSONALIZACION DE EVENTOS -->
+		<!-- =============================================================================================================== -->
+			<EVE_DEFAULT>
+			<!-- ########################################################################################################### -->
+			<!-- DESTINATARIOS ADMINISTRADORES TECNICOS -->
+			<!-- ########################################################################################################### -->
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+			<!-- ########################################################################################################### -->	
+			<!-- OTROS DATOS  -->
+			<!-- ########################################################################################################### -->
+				<vLog>SI</vLog> <!-- SI: Se genera un log de auditorías | NO: No se genera un log de auditorías -->
+				<vMail>SI</vMail> <!-- SI: Se envía correo | NO: No se envía correo -->
+				<vPantalla>NO</vPantalla> <!-- SI: Se mostrará el pop up del mensaje | NO: No se mostrará el pop up del mensaje -->
+				<vTiempoPantalla>0</vTiempoPantalla> <!-- Tiempo de visualización en segundos del pop up, si se deja vacío se cerrará en 30 segundos -->
+			</EVE_DEFAULT> 
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE CARGA DE XML CORRECTA  -->
+			<!-- ########################################################################################################### -->
+			<EVE_XML>
+				<vLog>NO</vLog> 
+				<vMail>NO</vMail>
+			</EVE_XML>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE CREACION DE CARPETAS CORRECTAS  -->
+			<!-- ########################################################################################################### -->
+			<EVE_CARP>
+				<vLog>SI</vLog> 
+				<vMail>NO</vMail>
+			</EVE_CARP>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE INICIO DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_INI>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+			</EVE_INI>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE FINALIZACION DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_FIN>
+				<vLog>SI</vLog>
+				<vMail>SI</vMail>
+			</EVE_FIN>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE INICIO DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_INI2>
+				<vLog>SI</vLog> 
+				<vMail>SI</vMail>
+			</EVE_INI2>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE FINALIZACION DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_FIN2>
+				<vLog>SI</vLog>
+				<vMail>SI</vMail>
+			</EVE_FIN2>
+			
+		<!--EVENTOS PROPIOS DEL BOT -->
+		<!-- =========================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- EVE001 - SE TERMINO LA VALIDACION DE CLIENTES BCP --> 
+			<!-- ########################################################################################################### -->
+			<EVE001>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE001>
+			<!-- ########################################################################################################### -->
+			<!-- EVE002 - SE TERMINO LA VALIDACION DE CLIENTES BBVA --> 
+			<!-- ########################################################################################################### -->
+			<EVE002>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE002>
+			<!-- ########################################################################################################### -->
+			<!-- EVE003 - SE TERMINO LA VALIDACION DE CLIENTES SCB --> 
+			<!-- ########################################################################################################### -->
+			<EVE003>
+				<to>rsoporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE003>
+			<!-- ########################################################################################################### -->
+			<!-- EVE004 - SE TERMINO LA VALIDACION DE CLIENTES IBK --> 
+			<!-- ########################################################################################################### -->
+			<EVE004>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE004>
+			<!-- ########################################################################################################### -->
+			<!-- EVE005 - SE TERMINO LA VALIDACION DE CLIENTES DINNER --> 
+			<!-- ########################################################################################################### -->
+			<EVE005>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE005>
+			<!-- ########################################################################################################### -->
+			<!-- EVE006 - SE TERMINO LA VALIDACION DE CLIENTES AMEX --> 
+			<!-- ########################################################################################################### -->
+			<EVE006>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE006>
+			<!-- ########################################################################################################### -->
+			<!-- EVE007 - SE TERMINO LA VALIDACION DE CLIENTES VISA --> 
+			<!-- ########################################################################################################### -->
+			<EVE007>
+				<to>soporterpa@dignita.tech</to>
+				<cc></cc>
+				<vMail>SI</vMail>
+				<vLog>SI</vLog> 
+			</EVE007>
+		</EVENTOS>
+		<!-- ====================================================================================================================== -->
+		<!-- ################################## [FIN]: EVENTOS DE PROCESO (TO Y CC) ############################################### -->
+		<!-- ====================================================================================================================== -->
+	
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- [FINAL]: VARIABLES DEPENDIENTES DEL ENTORNO/AMBIENTE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	</Production>
+	
+	<!-- __________________________________________________________________________________________________________________________ -->
+	<!-- __________________________________________________________________________________________________________________________ -->
+
+	<COMMON>
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- [INICIO]: VARIABLES COMUNES (INDEPENDIENTES DEL ENTORNO/AMBIENTE) $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+		<!-- ====================================================================================================================== -->
+		<!-- #################################### [INICIO]: EXCEPCIONES DE PROCESO (SUBJECT Y BODY) ################################-->
+		<!-- ====================================================================================================================== -->
+		<ERRORES>
+		<!-- PERSONALIZACION DE ERRORES -->
+		<!-- =============================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- ERR_DEFAULT | Cuerpo por defecto cuando no se definan un cuerpo especifico -->
+			<!-- ########################################################################################################### -->	
+			<ERR_DEFAULT>
+				<subject>¡ERROR! BOT:$vNombreBot$ - $vTipoMensaje$: Error inesperado durante la ejecución</subject>
+				<body>Ocurrió el siguiente problema '$vMsjErr$' en la linea '$vLineaErr$' en la tarea '$vTaskbot$'</body>
+			</ERR_DEFAULT>		
+			<!-- ########################################################################################################### -->
+			<!-- ERRORUSR | Detalle: Como se le informará el error al usuario -->
+			<!-- ########################################################################################################### -->	
+			<ERRUSR>
+				<subject>¡ERROR! BOT:$vNombreBot$ - $vTipoMensaje$: Error inesperado durante la ejecución</subject>
+				<body>Ha ocurrido un problema durante la ejecución del Bot por favor contactar a los responsables técnicos para mayores detalles.</body>
+			</ERRUSR>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR000 | Detalle: Error inesperado, revisar detalle de ejecución -->
+			<!-- ########################################################################################################### -->	
+			<ERR000>
+				<subject>¡ERROR! BOT:$vNombreBot$ - $vTipoMensaje$: Error inesperado durante la ejecución</subject>
+				<body>Ocurrió el siguiente problema '$vMsjErr$' en la linea '$vLineaErr$' en la tarea '$vTaskbot$'</body>
+			</ERR000>
+			<!-- ########################################################################################################### -->
+			<!-- ERR_RESP | Detalle: Error al intentar crear las carpetas de respaldo -->
+			<!-- ########################################################################################################### -->
+			<ERR_RESP>
+				<subject>¡ERROR! BOT:$vNombreBot$ - $vTipoMensaje$: Ha ocurrido un problema al crear el respaldo de la ejecución</subject>
+				<body>$vTipoMensaje$: Ocurrió el siguiente problema '$vMsjErr$' en la linea '$vLineaErr$' en la tarea '$vTaskbot$'</body>
+			</ERR_RESP>
+			<!-- ########################################################################################################### -->
+			<!-- ERR_XML | Detalle: Error al intentar capturar los parámetros iniciales del XML -->
+			<!-- ########################################################################################################### -->
+			<ERR_XML>
+				<subject>¡ERROR! BOT:$vNombreBot$ - $vTipoMensaje$: Ha ocurrido un problema al procesar el XML</subject>
+				<body>$vTipoMensaje$: Ocurrió el siguiente problema '$vMsjErr$' en la linea '$vLineaErr$' en la tarea '$vTaskbot$'</body>
+			</ERR_XML>
+			<!-- ########################################################################################################### -->
+			<!-- ERR_CARP | Detalle: Error al intentar crear las carpetas -->
+			<!-- ########################################################################################################### -->
+			<ERR_CARP>
+				<subject>¡ERROR! BOT:$vNombreBot$ - $vTipoMensaje$: Ha ocurrido un problema al crear las carpetas del Bot</subject>
+				<body>$vTipoMensaje$: Ocurrió el siguiente problema '$vMsjErr$' en la linea '$vLineaErr$' en la tarea '$vTaskbot$'</body>
+			</ERR_CARP>
+
+		<!--ERRORES PROPIOS DEL BOT -->
+		<!-- =============================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 01 - ERROR GENERAL AL EJECUTAR LA TAREA CORE DEL PROCESO --> 
+			<!-- ########################################################################################################### -->
+			<ERR001>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: Ha ocurrido un problema en la ejecución del proceso</subject>
+				<body><![CDATA[ <p><strong>Estimados:</strong></p><p>$vTipoMensaje$: Ocurri&oacute; el siguiente problema en la ejecuci&oacute;n del proceso.</p><p>ERROR MESSAGE: '<strong>$vMsjErr$</strong>'</p><p>ROCKETBOT ERROR: <strong>'$vRockMsjError$'</strong></p><p>ERROR TASKT: <strong>'$vTasktBot$'</strong></p><p>RUNNER: <strong>'$vRunner$'</strong></p><p>Este proceso fue ejecutado en el ambiente de <strong>'$vAmbiente$'</strong></p><p>Se adjunta la evidencia del error:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p>]]></body>
+			</ERR001>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 02 - ERROR NO SE CARGÓ LA PÁGINA VERISMART CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR002>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE INGRESO CORRECTAMENTE A LA PAGINA VERISMART</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />No se Ingreso a la P&aacute;gina Verismat&nbsp;</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR002>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 03 - ERROR NO SE DESCARGÓ PORTFOLIO CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR003>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE DESCARGO EL ARCHIVO PORTFOLIO CORRECTAMENTE</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />La descarga de Portfolio no se ejecut&oacute; correctamente</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR003>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 04 - ERROR NO SE DESCARGO VENTAS CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR004>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE DESCARGO EL ARCHIVO DE VENTAS CORRECTAMENTE</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />La descarga de Ventas no se ejecut&oacute; correctamente</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR004>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 05 - ERROR NO SE CARGÓ LA PÁGINA DE DINNER CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR005>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE INGRESO CORRECTAMENTE A LA PAGINA DINNER</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />No se Ingreso a la P&aacute;gina Dinner</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR005>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 06 - ERROR NO SE CARGÓ LA PÁGINA DE AMEX CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR006>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE INGRESO CORRECTAMENTE A LA PAGINA AMEX</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />No se Ingreso a la P&aacute;gina Amex</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR006>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 07 - ERROR NO SE CARGÓ LA PÁGINA DE NIUBIZ CORRECTAMENTE --> 
+			<!-- ########################################################################################################### -->
+			<ERR007>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE INGRESO CORRECTAMENTE A LA PAGINA NIUBIZ</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />No se Ingreso a la P&aacute;gina Niubiz</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img src="data:image/png;base64,$vImageBase64$" alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR007>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 08 - ERROR NO SE DESCARGO EL ARCHIVO DE AFILIACION DE VISA --> 
+			<!-- ########################################################################################################### -->
+			<ERR008>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE DESCARGO EL ARCHIVO DE AFILIACION DE VISA</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />Se espero 20 min para la descarga del Archivo de Afiliaci&oacute;n&nbsp;</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR008>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 09 - ERROR NO SE ENCONTRO CORREOS DE RESPUESTA DE BANCOS --> 
+			<!-- ########################################################################################################### -->
+			<ERR009>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: NO SE ENCONTRO CORREOS DE RESPUESTA DE BANCOS</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />No se encontro Correos de Respuesta de los Bancos</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR009>
+			<!-- ########################################################################################################### -->
+			<!-- ERROR 10 - ERROR NO SE VISUALIZO LAS DESAFILIACIONES DE NIUBIZ --> 
+			<!-- ########################################################################################################### -->
+			<ERR010>
+				<subject>¡ERROR! BOT: $vNombreBot$ | $vTipoMensaje$: ERROR NO SE VISUALIZO LAS DESAFILIACIONES DE NIUBIZ</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />No se encontro el archivo de Desafiliacion de Niubiz</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img alt="$vNameScreenShot$" /></p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p>]]></body>
+			</ERR010>
+		</ERRORES>
+		<!-- ====================================================================================================================== -->
+		<!-- #################################### [FINAL]: EXCEPCIONES DE PROCESO (SUBJECT Y BODY) #################################-->
+		<!-- ====================================================================================================================== -->
+		
+		<!-- ====================================================================================================================== -->
+		<!-- ######################################### [INICIO]: EVENTOS DE PROCESO (SUBJECT Y BODY) ###############################-->
+		<!-- ====================================================================================================================== -->
+		<EVENTOS>
+		<!-- PERSONALIZACION DE EVENTOS -->
+		<!-- =============================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- EVE_DEFAULT | Cuerpo por defecto cuando no se definan cuerpos especificos --> 
+			<!-- ########################################################################################################### -->
+			<EVE_DEFAULT>
+				<subject>$vNombreBot$ - $vSubject$</subject>
+				<body>$vBody$</body>
+			</EVE_DEFAULT>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE CARGA DE XML CORRECTA  -->
+			<!-- ########################################################################################################### -->
+			<EVE_XML>
+				<subject>$vNombreBot$ - $vTipoMensaje$: Carga correcta del XML</subject>
+				<body>Se ha cargado correctamente el XML de configuración</body>
+			</EVE_XML>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE CREACION DE CARPETAS CORRECTAS  -->
+			<!-- ########################################################################################################### -->
+			<EVE_CARP>
+				<subject>$vNombreBot$ - $vTipoMensaje$: Creación de carpetas correctamente</subject>
+				<body>Se ha creado las carpetas y copiado los archivos necesarios para comenzar el proceso</body>
+			</EVE_CARP>
+			<!-- ########################################################################################################### -->
+			<!-- EVE_INI EVENTO DE INICIO --> 
+			<!-- ########################################################################################################### -->
+			<EVE_INI>
+				<subject>INICIO BOT: $vNombreBot$</subject>
+				<body><![CDATA[ <p>Se da inicio el proceso de '$vNombreBot$'</p><p><strong>Fecha y Hora de inicio: </strong>$vProcessStartTime$</p><p><strong>Ambiente: </strong>'$vAmbiente$'&nbsp;</p><p><strong>Runner: </strong>'$vRunner$'</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><p><img alt="$vNameScreenShot$" /></p>]]></body>
+			</EVE_INI>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE FINALIZACION DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_FIN>
+				<subject>FIN BOT: $vNombreBot$</subject>
+				<body><![CDATA[ <p>Ha finalizado el proceso de '$vNombreBot$'</p><ul><li>Inicio de ejecuci&oacute;n: $vProcessStartTime$</li><li>Fin de la ejecuci&oacute;n: $vProcessFinishTime$</li><li>Duraci&oacute;n de la ejecuci&oacute;n: $vProcessDurationTime$</li></ul><p><strong>Ambiente:</strong> '$vAmbiente$'</p><p><strong>Runner:</strong> '$vRunner$'</p> ]]></body>
+			</EVE_FIN>
+			<!-- ########################################################################################################### -->
+			<!-- EVE_INI2 EVENTO DE INICIO --> 
+			<!-- ########################################################################################################### -->
+			<EVE_INI2>
+				<subject>INICIO BOT: $vNombreBot2$</subject>
+				<body><![CDATA[ <p>Se da inicio el proceso de '$vNombreBot2$'</p><p><strong>Fecha y Hora de inicio: </strong>$vProcessStartTime$</p><p><strong>Ambiente: </strong>'$vAmbiente$'&nbsp;</p><p><strong>Runner: </strong>'$vRunner$'</p> ]]></body>
+			</EVE_INI2>
+			<!-- ########################################################################################################### -->
+			<!-- EVENTO DE FINALIZACION 2 DEL PROCESO  -->
+			<!-- ########################################################################################################### -->
+			<EVE_FIN2>
+				<subject>FIN BOT: $vNombreBot2$</subject>
+				<body><![CDATA[ <p>Ha finalizado el proceso de '$vNombreBot2$'</p><ul><li>Inicio de ejecuci&oacute;n: $vProcessStartTime$</li><li>Fin de la ejecuci&oacute;n: $vProcessFinishTime$</li><li>Duraci&oacute;n de la ejecuci&oacute;n: $vProcessDurationTime$</li></ul><p><strong>Ambiente:</strong> '$vAmbiente$'</p><p><strong>Runner:</strong> '$vRunner$'</p> ]]></body>
+			</EVE_FIN2>
+			<!-- ########################################################################################################### -->
+			<!-- EVE_RESP  EVE DE RESPALDO DE LA EJECUCION EXITOSO--> 
+			<!-- ########################################################################################################### -->
+			<EVE_RESP>
+				<subject>$vNombreBot$ - $vTipoMensaje$: Respaldo Realizado</subject>
+				<body>Se realizo el respaldo de la instancia de ejecución exitosamente</body>
+			</EVE_RESP>
+			
+		<!--EVENTOS PROPIOS DEL BOT -->
+		<!-- =========================================================================================================== -->
+			<!-- ########################################################################################################### -->
+			<!-- EVE001 - SE TERMINO LA VALIDACION DE CLIENTES BCP --> 
+			<!-- ########################################################################################################### -->
+			<EVE001>
+				<subject>BOT: $vNombreBot$ | *URGENTE* AFILIACION BCP - $vFechaActual$</subject>
+				<body><![CDATA[ $vdtBCP$ ]]></body>
+			</EVE001>
+			<!-- ########################################################################################################### -->
+			<!-- EVE002 - SE TERMINO LA VALIDACION DE CLIENTES BBVA --> 
+			<!-- ########################################################################################################### -->
+			<EVE002>
+				<subject>BOT: $vNombreBot$ | *URGENTE* AFILIACION BBVA - $vFechaActual$</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span></p><p>Su apoyo con las siguientes afiliaciones:</p><p>Se completo la Validacion de Clientes del Banco BBVA.</p><p>A continuaci&oacute;n, se muestra el resultado de la ejecuci&oacute;n:</p><ul><li>C&oacute;digo de emisora: 68948</li><li>C&oacute;digo servicio: 006</li><li>Cantidad de afiliaci&oacute;n: $vOutlookBBVA$</li></ul>]]></body>
+			</EVE002>
+			<!-- ########################################################################################################### -->
+			<!-- EVE003 - SE TERMINO LA VALIDACION DE CLIENTES SCB --> 
+			<!-- ########################################################################################################### -->
+			<EVE003>
+				<subject>BOT: $vNombreBot$ | *URGENTE* AFILIACION SCB - $vFechaActual$</subject>
+				<body><![CDATA[ $vdtSCB$ ]]></body>
+			</EVE003>
+			<!-- ########################################################################################################### -->
+			<!-- EVE004 - SE TERMINO LA VALIDACION DE CLIENTES IBK --> 
+			<!-- ########################################################################################################### -->
+			<EVE004>
+				<subject>BOT: $vNombreBot$ | SE COMPLETO LA VALIDACION DE CLIENTES DEL BANCO INTERBANK</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />Se completo la Validacion de Clientes del Banco <strong><span style="color: #ff0000; background-color: #ffff00;">INTERBANK</span></strong> y el archivo fue subido al repositorio /home/ftppag/Debitos/27028/2702801/IN_AFIL exitosamente.</p><p>&nbsp;</p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p> ]]></body>
+			</EVE004>
+			<!-- ########################################################################################################### -->
+			<!-- EVE005 - SE TERMINO LA VALIDACION DE CLIENTES DINNER --> 
+			<!-- ########################################################################################################### -->
+			<EVE005>
+				<subject>BOT: $vNombreBot$ | SE COMPLETO LA VALIDACION DE CLIENTES DEL BANCO DINNER CLUB</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />Se completo la Validacion de Clientes del Banco <strong><span style="color: #ff0000; background-color: #ffff00;">DINNER CLUB</span></strong> exitosamente.</p><p>&nbsp;</p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p> ]]></body>
+			</EVE005>
+			<!-- ########################################################################################################### -->
+			<!-- EVE006 - SE TERMINO LA VALIDACION DE CLIENTES AMEX --> 
+			<!-- ########################################################################################################### -->
+			<EVE006>
+				<subject>BOT: $vNombreBot$ | SE COMPLETO LA VALIDACION DE CLIENTES DEL BANCO AMERICAN EXPRESS</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />Se completo la Validacion de Clientes del Banco <strong><span style="color: #ff0000; background-color: #ffff00;">AMERICAN EXPRESS</span></strong> exitosamente.</p><p>&nbsp;</p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p> ]]></body>
+			</EVE006>	
+			<!-- ########################################################################################################### -->
+			<!-- EVE007 - SE TERMINO LA VALIDACION DE CLIENTES VISA --> 
+			<!-- ########################################################################################################### -->
+			<EVE007>
+				<subject>BOT: $vNombreBot$ | SE COMPLETO LA VALIDACION DE CLIENTES DEL BANCO VISA</subject>
+				<body><![CDATA[ <p><span style="text-decoration: underline;"><em><strong>Estimados/as:</strong></em></span><br />Se completo la Validacion de Clientes del Banco <strong><span style="color: #ff0000; background-color: #ffff00;">VISA</span></strong> exitosamente.</p><p>&nbsp;</p><p>Environment: <strong>$vAmbiente$</strong></p><p>ID Event: <strong>$vTipoMensaje$</strong></p> ]]></body>
+			</EVE007>
+			<!-- =========================================================================================================== -->
+			<!-- FIN - VARIABLES PARA EL PROCESO BATCH --> 
+		</EVENTOS>
+		<!-- ====================================================================================================================== -->
+		<!-- ######################################### [FINAL]: EVENTOS DE PROCESO (SUBJECT Y BODY) ################################-->
+		<!-- ====================================================================================================================== -->
+
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+		<!-- [FINAL]: VARIABLES COMUNES (INDEPENDIENTES DEL ENTORNO/AMBIENTE) $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	</COMMON>
+		
+			
+	<!-- ====================================================================================================================== -->
+	<!-- ######################################### [INICIO]: OTROS DATOS IMPORTANTES ########################################## -->
+	<!-- ====================================================================================================================== -->
+	<FIRMA><![CDATA[ <p><strong><span style="font-size: 10.0pt; font-family: 'Fira Sans',sans-serif; color: red;"><span style="color: #000000;">-----------------------------------------------------------<br /><span style="color: #ff0000;">Medios de Pago<br /></span></span></span></strong><span style="font-size: 10pt; font-family: 'Fira Sans', sans-serif; color: #000000;">Cel: 946 900 298<br /><span style="color: #ff0000;"><a style="color: #ff0000;" href="mailto:mediosdepago@verisure.pe" target="_blank" rel="noopener">mediosdepago@verisure.pe</a><br /><br /><span style="color: #000000;"><strong>Verisure Per&uacute;<br /></strong>Av. Javier Prado este 444, piso 25 San Isidro.&nbsp;Lima, Per&uacute;<br /><span style="color: #ff0000;"><a style="color: #ff0000;" title="www.verisure.pe" href="http://www.verisure.pe/" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=http://www.verisure.pe/&amp;source=gmail&amp;ust=1672239676309000&amp;usg=AOvVaw0BsDjQ4ooLxm7IjfssABPC"><strong><span lang="IT">www.verisure.pe</span></strong></a></span></span></span></span><strong><span style="font-size: 10.0pt; font-family: 'Fira Sans',sans-serif; color: red;"><span style="color: #000000;"><br /></span></span></strong></p> ]]></FIRMA> <!-- Firma del correo -->
+	<!-- ########################################################################################################### -->
+	<!-- VALORES A REEMPLAZAR EN EL ENVÍO DEL EMAIL --> 
+	<!-- ########################################################################################################### -->
+	
+    <!-- TIP: Son los Valores dinamicos que se crearan cuando se envie los mensajes, al inicio y final de ejecucion -->	
+	<!-- ############################################################################################################-->
+		<vNKeysName>20</vNKeysName> <!-- numero de carpetas a crear en el disco local -->
+		<vNKeysName> <!-- carpetas a eliminar en el disco local -->
+			<vKeyName>vNombreBot</vKeyName>
+			<vKeyName>vNombreBot2</vKeyName>
+			<vKeyName>vTipoMensaje</vKeyName>
+			<vKeyName>vMsjErr</vKeyName>
+			<vKeyName>vRockMsjError</vKeyName>
+			<vKeyName>vTasktBot</vKeyName>
+			<vKeyName>vImageBase64</vKeyName>
+            <vKeyName>vNameScreenShot</vKeyName>
+            <vKeyName>vRunner</vKeyName>
+            <vKeyName>vAmbiente</vKeyName>
+            <vKeyName>vProcessStartTime</vKeyName>
+            <vKeyName>vOutlookBBVA</vKeyName>
+            <vKeyName>vFechaActual</vKeyName>
+            <vKeyName>vdtSCB</vKeyName>
+            <vKeyName>vdtBCP</vKeyName>
+            <vKeyName></vKeyName>
+            <vKeyName></vKeyName>
+            <vKeyName></vKeyName>
+            <vKeyName></vKeyName>
+            <vKeyName></vKeyName>
+		</vNKeysName>
+		<VALUESREPLACED>
+		<!-- VARIABLES GENERALES DEL PROCESO --> 
+		<vKeyName>vNombreBot</vKeyName>
+		<vKeyName>vNombreBot2</vKeyName>
+		<vKeyName>vTipoMensaje</vKeyName>
+		<vKeyName>vMsjErr</vKeyName>
+		<vKeyName>vRockMsjError</vKeyName>
+		<vKeyName>vTasktBot</vKeyName>
+		<vKeyName>vImageBase64</vKeyName>
+		<vKeyName>vNameScreenShot</vKeyName>
+		<!-- VARIABLES QUE DEPENDEN DEL AMBIENTE DE DESPLIEGUE --> 
+		<vKeyName>vRunner</vKeyName>
+		<vKeyName>vAmbiente</vKeyName>
+		<!-- VARIABLES PARA EL ENVÍO DE CORREO --> 
+		<vKeyName>vProcessStartTime</vKeyName>
+		<vKeyName>vProcessFinishTime</vKeyName>
+		<vKeyName>vProcessDurationTime</vKeyName>
+		<!-- VARIABLES PARA LAS FECHAS --> 
+		<!-- VARIABLES PROPIAS DEL PROCESO -->
+		<vKeyName>vOutlookBBVA</vKeyName>
+		<vKeyName>vFechaActual</vKeyName>
+		<vKeyName>vdtSCB</vKeyName>
+		<vKeyName>vdtBCP</vKeyName>
+	</VALUESREPLACED>
+
+	<!-- ================================================================================================================ -->
+	<!-- ################################# [FINAL]: ESTABLECER VALORES DE LAS VARIABLES  ################################ -->
+	<!-- ================================================================================================================ -->
+</MENSAJERIA>

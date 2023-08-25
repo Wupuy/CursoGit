@@ -1,0 +1,610 @@
+<!-- ########################################################################################## -->
+<!-- ################################# COMIENZO DEL XML CONTROL DE AFILIACIONES  ############## -->
+<!-- ########################################################################################## -->
+
+<BOT>
+	<!-- ################################# DEFINICION DE LAS VARIABLES  ###################################### -->
+	<VARIABLES>
+	<!-- ============================================================================================================ -->	
+	<!-- ################################# INICIO: VARIABLES QUE DEPENDEN DEL AMBIENTE ############################## -->	
+		
+	<!-- _________________________   DATA ESPECÍFICA UTILIZABLE PARA EL PROCESO  _________________________ -->
+		
+	<!-- INICIO - VARIABLES RUTAS -->
+	<!-- =========================================================================================================== -->
+		<VARIABLE comun="no" tipo="unico">vBaseLocal</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathLog</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathTemp</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathScreenshot</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathScripts</VARIABLE>	
+		<VARIABLE comun="no" tipo="unico">vDelayApplication</VARIABLE>
+	<!-- =========================================================================================================== -->
+	<!-- FIN - VARIABLES RUTAS -->
+		
+	<!-- INICIO - VARIABLES PARA EL PROCESO  -->
+	<!-- =========================================================================================================== -->
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO  a_FW_LOGIN-VERISMART-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vUrlVeriSmart</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vUsuarioVeriSmart</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPassVeriSmart</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_DESCARGA-PORFOLIO-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vSolicitudVeriSmart</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vEstadoVeriSmart</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-BCP-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vEmpresaBCP</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vMontoBCP</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vSolicitudBCP</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-BBVA-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vEmisorBBVA</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vServicioBBVA</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vAltaBBVA</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-SCB-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vMonedaSCB</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vImporteSCB</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vDatosSCB</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vRespuestaSCB</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_DINNER-CLUB-LOGIN-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vUrlDinner</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vUsuarioDinner</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPasswordDinner</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_DINNER-CLUB-PROCESS-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vDNIDinner</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vMontoDinner</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vTelefonoDinner</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vEmailDinner</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vErrorDinner</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_AMEX-LOGIN-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vUrlAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vUsuarioAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPassAmex</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_AMEX-LOGIN-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vNameAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vApellidoPAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vApellidoMAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vDNIAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vTelfAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vEmailAmex</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vDirecAmex</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-DESAFILIACION-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vCodIntVisa</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-AFILIACION-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vMensualidadAfi</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vDNIAfi</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vDNIVisa</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vTelfAfi</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vEmailVisa</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vCargoVisa</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPeriodo</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vMontoMax</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-LOGIN-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vUrlVisa</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vUsuarioVisa</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPassVisa</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vKeyCaptcha</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_PROCESS-SBN-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vUsuarioSBN</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPassSBN</VARIABLE>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-WEB-REPORTES-->
+		<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vMontoMaxVisa</VARIABLE>
+		
+	<!-- =========================================================================================================== -->
+	<!-- FIN - VARIABLES PARA EL PROCESO -->	
+		
+<!-- =========================================================================================================== -->
+<!-- [FIN]: VARIABLES QUE DEPENDEN DEL AMBIENTE ================================================================ -->	
+<!-- =========================================================================================================== -->
+
+<!-- =========================================================================================================== -->
+<!-- [INICIO]: VARIABLES COMUNES (INDEPENDIENTES DEL ENTORNO/AMBIENTE) ========================================= -->	
+<!-- =========================================================================================================== -->
+	
+<!-- UTILITARIO: u_FW_GET-XML-CONFIG -->	
+<!-- =========================================================================================================== -->
+<!-- ############################################################################################################-->
+	<!-- VARIABLES DE RUTA -->
+	<!-- ############################################################################################################-->
+		<VARIABLE comun="no" tipo="unico">vBaseLocal</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathLog</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathTemp</VARIABLE>			
+		<VARIABLE comun="no" tipo="unico">vPathScreenshot</VARIABLE>
+		<VARIABLE comun="no" tipo="unico">vPathScripts</VARIABLE>
+
+	<!-- ############################################################################################################-->
+	<!-- VARIABLES UNICAS DEL PROCESO -->
+	<!-- ############################################################################################################-->
+
+		<VARIABLE comun="si" tipo="unico">vDisco</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetaPrincipal</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetaProyecto</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetaInputs</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetasLogs</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetaOutput</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetasTemp</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetasTemplates</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetaScreenshots</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCapetaScripts</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vProcessID</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vNombreBot</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vNombreBot2</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vContRetry</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vAntiCaptchaKey</VARIABLE>
+
+	<!-- ############################################################################################################-->
+	<!-- VARIABLES DE FROMATO FECHAS -->
+	<!-- ############################################################################################################-->
+		<VARIABLE comun="si" tipo="fecha" clase="Hoy">vHoyFechaDiaFormatoDD</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Hoy">vHoyFechaMesFormatoMM</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Hoy">vHoyFechaAnioFormatoYY</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Hoy">vHoyFechaAnioFormatoYYYY</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Hoy">vDateToday</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Ayer">vAyerFechaDiaFormatoDD</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Ayer">vAyerFechaMesFormatoMM</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Ayer">vAyerFechaAnioFormatoYY</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Ayer">vAyerFechaAnioFormatoYYYY</VARIABLE>
+		<VARIABLE comun="si" tipo="fecha" clase="Ayer">vDateYesterday</VARIABLE>
+	<!-- ############################################################################################################-->	
+	<!-- VARIABLES DE MESES DEL AÑO -->
+	<!-- ############################################################################################################-->	
+		<VARIABLE comun="si" tipo="unico">vMes01</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes02</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes03</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes04</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes05</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes06</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes07</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes08</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes09</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes10</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes11</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vMes12</VARIABLE>
+	<!-- ############################################################################################################-->	
+	<!-- VARIABLES DE TIEMPOS DE ESPERA -->	
+	<!-- ############################################################################################################-->	
+		<VARIABLE comun="si" tipo="unico">vWaitTimeXS</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vWaitTimeS</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vWaitTimeM</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vWaitTimeL</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vWaitTimeXL</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vWaitTimeXLL</VARIABLE>
+	
+<!-- UTILITARIO: u_FW_VALIDATE-FOLDERS -->	
+<!-- =========================================================================================================== -->
+	<!-- ############################################################################################################-->	
+	<!-- CARPETAS DEL AMBIENTE -->	
+	<!-- TIP: Son las carpetas que se eliminan cuando se ejecute el bot, dentro de la instancia de ejecucion -->	
+	<!-- ############################################################################################################-->
+		<VARIABLE comun="si" tipo="unico">vNCarpetasAmbDelete</VARIABLE>
+		<VARIABLE comun="si" tipo="loop" base="vCarpetasAmbDelete/">vCarpetasAmbDelete/vCarpetaAmbDelete</VARIABLE>
+	<!-- ############################################################################################################-->	
+	<!-- CARPETAS DEL AMBIENTE -->	
+	<!-- TIP: Son las carpetas que se crearan cuando se ejecute el bot, dentro de la instancia de ejecucion -->	
+	<!-- ############################################################################################################-->
+		<VARIABLE comun="si" tipo="unico">vNCarpetasAmb</VARIABLE>
+		<VARIABLE comun="si" tipo="loop" base="vCarpetasAmb/">vCarpetasAmb/vCarpetaAmb</VARIABLE>
+	<!-- ############################################################################################################-->	
+	<!-- ARCHIVOS DEL AMBIENTE -->	
+	<!-- TIP: Son los archivos que se copiaran desde el control room hacia las carpetas de ambiente creadas -->	
+	<!-- ############################################################################################################-->
+		<VARIABLE comun="si" tipo="unico">vNArchivosAmb</VARIABLE>
+		<VARIABLE comun="si" tipo="loop" base="vAmbiente/">vAmbiente/vArchAmb/vBase</VARIABLE>
+		<VARIABLE comun="si" tipo="loop" base="vAmbiente/">vAmbiente/vArchAmb/vNombreArch</VARIABLE>
+		<VARIABLE comun="si" tipo="loop" base="vAmbiente/">vAmbiente/vArchAmb/vRutaDestino</VARIABLE>
+		<VARIABLE comun="si" tipo="loop" base="vAmbiente/">vAmbiente/vArchAmb/vNombreArchDest</VARIABLE>
+		
+<!-- UTILITARIO: u_FW_GET-XML-EVENT  -->
+<!-- =========================================================================================================== -->
+	<!-- ############################################################################################################-->	
+	<!-- MENSAJERIA -->		
+	<!-- ############################################################################################################-->
+		<VARIABLE comun="si" tipo="unico">vArchivoLog</VARIABLE>		
+		<VARIABLE comun="si" tipo="unico">vArchivoLogError</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vCarpetaPantallazos</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vSeparador</VARIABLE>
+		<VARIABLE comun="si" tipo="unico">vArea</VARIABLE>
+	
+<!-- =========================================================================================================== -->
+<!-- [FINAL]: VARIABLES COMUNES (INDEPENDIENTES DEL ENTORNO/AMBIENTE) ========================================== -->	
+<!-- =========================================================================================================== -->
+	</VARIABLES>
+
+	<!-- ################################# LLENADO DE LAS VARIABLES  ######################################### -->
+	<!-- ============================================================================================================ -->
+	<!-- ################################# INICIO: VARIABLES QUE DEPENDEN DEL AMBIENTE  ############################# -->
+<Development>
+	<!-- ################################# AMBIENTE DESARROLLO  ################################# -->
+	<!-- ======================================================================================== -->
+
+	<!-- _________________________   DATA ESPECÍFICA UTILIZABLE PARA EL PROCESO  _________________________ -->
+		
+	<!-- INICIO - VARIABLES RUTAS -->
+	<!-- =========================================================================================================== -->
+		<vBaseLocal>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/</vBaseLocal>  <!-- Ruta base del bot en el disco local -->
+		<vPathLog>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetasLogs#/</vPathLog>
+		<vPathTemp>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetasTemp#/</vPathTemp>
+		<vPathScreenshot>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetasLogs#/#vCarpetaScreenshots#/</vPathScreenshot>
+		<vPathScripts>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetaInputs#/#vCapetaScripts#/</vPathScripts>
+		<vDelayApplication>20</vDelayApplication>
+	<!-- =========================================================================================================== -->
+	<!-- FIN - VARIABLES RUTAS -->
+			
+	<!-- INICIO - VARIABLES PARA EL PROCESO  -->
+	<!-- =========================================================================================================== -->
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_LOGIN-VERISMART-->
+		<!-- ############################################################################################################-->
+		<vUrlVeriSmart>https://www.verismart.com.pe/verismart/login/index.php</vUrlVeriSmart>
+		<vUsuarioVeriSmart>rotativo.rpa</vUsuarioVeriSmart>
+		<vPassVeriSmart>Verisure2022*</vPassVeriSmart>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_DESCARGA-PORFOLIO-->
+		<!-- ############################################################################################################-->
+		<vSolicitudVeriSmart>registrotarjeta</vSolicitudVeriSmart>
+		<vEstadoVeriSmart>ingresado</vEstadoVeriSmart>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-BCP-->
+		<!-- ############################################################################################################-->
+		<vEmpresaBCP>VERISURE</vEmpresaBCP>
+		<vMontoBCP>s/ 0.00</vMontoBCP>
+		<vSolicitudBCP>AFILIAR</vSolicitudBCP>
+		<!-- ############################################################################################################-->
+		<!-- t_FW_ALTA-TRAMA-BBVA-->
+		<!-- ############################################################################################################-->
+		<vEmisorBBVA>68948</vEmisorBBVA>
+		<vServicioBBVA>006</vServicioBBVA>
+		<vAltaBBVA>ALTA</vAltaBBVA>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-SCB-->
+		<!-- ############################################################################################################-->
+		<vMonedaSCB>1</vMonedaSCB>
+		<vImporteSCB>0.00</vImporteSCB>
+		<vDatosSCB>2</vDatosSCB>
+		<vRespuestaSCB>0</vRespuestaSCB>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_DINNER-CLUB-LOGIN-->
+		<!-- ############################################################################################################-->
+		<vUrlDinner>https://comerciosdinersclub.pe/auth/login</vUrlDinner>
+		<vUsuarioDinner>RPAAFIL1</vUsuarioDinner>
+		<vPasswordDinner>Veri2023*</vPasswordDinner>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_DINNER-CLUB-PROCESS-->
+		<!-- ############################################################################################################-->
+		<vDNIDinner>00000000</vDNIDinner>
+		<vMontoDinner>2000</vMontoDinner>
+		<vTelefonoDinner>999999999</vTelefonoDinner>
+		<vEmailDinner>999999999</vEmailDinner>
+		<vErrorDinner>No se encontro datos del cliente</vErrorDinner>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_AMEX-LOGIN-->
+		<!-- ############################################################################################################-->
+		<vUrlAmex>https://www.amex-gca.com.pe/frmLogin.aspx</vUrlAmex>
+		<vUsuarioAmex>549068203</vUsuarioAmex>
+		<vPassAmex>4435411</vPassAmex>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_AMEX-->
+		<!-- ############################################################################################################-->
+		<vNameAmex>Cliente</vNameAmex>
+		<vApellidoPAmex>Cliente</vApellidoPAmex>
+		<vApellidoMAmex>Cliente</vApellidoMAmex>
+		<vDNIAmex>00000000</vDNIAmex>
+		<vTelfAmex>1111111</vTelfAmex>
+		<vEmailAmex>notiene@hotmail.com</vEmailAmex>
+		<vDirecAmex>Lima</vDirecAmex>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-DESAFILIACION-->
+		<!-- ############################################################################################################-->
+		<vCodIntVisa>885</vCodIntVisa>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-AFILIACION-->
+		<!-- ############################################################################################################-->
+		<vMensualidadAfi>351</vMensualidadAfi>
+		<vDNIAfi>DNI</vDNIAfi>
+		<vDNIVisa>00000000</vDNIVisa>
+		<vTelfAfi>999999999</vTelfAfi>
+		<vEmailVisa>NOTIENE@HOTMAIL.COM</vEmailVisa>
+		<vCargoVisa>VARIABLE</vCargoVisa>
+		<vPeriodo>MENSUAL</vPeriodo>
+		<vMontoMax>2000.00</vMontoMax>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-LOGIN-->
+		<!-- ############################################################################################################-->
+		<vUrlVisa>https://pagoprogramado.niubiz.com.pe/comercio/login</vUrlVisa>
+		<vUsuarioVisa>VERRPA</vUsuarioVisa>
+		<vPassVisa>Verisure2023.</vPassVisa>
+		<vKeyCaptcha>e4ed20154a4093fe6377f855d039901c</vKeyCaptcha>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_PROCESS-SBN-->
+		<!-- ############################################################################################################-->
+		<vUsuarioSBN>C39854</vUsuarioSBN>
+		<vPassSBN>47434482</vPassSBN>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-WEB-REPORTES-->
+		<!-- ############################################################################################################-->
+		<vMontoMaxVisa>2000.0</vMontoMaxVisa>
+	<!-- =========================================================================================================== -->
+	<!-- FIN - VARIABLES PARA EL PROCESO -->
+</Development>
+	
+	<!-- ________________________________________________________________________________________________________ -->
+	<!-- ________________________________________________________________________________________________________ -->
+	
+	<Production>
+<!-- =========================================================================================================== -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- [INICIO]: VARIABLES DEPENDIENTES DEL ENTORNO/AMBIENTE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+		
+	<!-- INICIO - VARIABLES RUTAS -->
+	<!-- =========================================================================================================== -->
+		<vBaseLocal>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/</vBaseLocal>  <!-- Ruta base del bot en el disco local -->
+		<vPathLog>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetasLogs#/</vPathLog>
+		<vPathTemp>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetasTemp#/</vPathTemp>
+		<vPathScreenshot>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetasLogs#/#vCarpetaScreenshots#/</vPathScreenshot>
+		<vPathScripts>#vDisco#/#vCarpetaPrincipal#/#vCarpetaProyecto#/#vCarpetaInputs#/#vCapetaScripts#/</vPathScripts>
+		<vDelayApplication>20</vDelayApplication>
+	<!-- =========================================================================================================== -->
+	<!-- FIN - VARIABLES RUTAS -->
+			
+	<!-- INICIO - VARIABLES PARA EL PROCESO  -->
+	<!-- =========================================================================================================== -->
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_LOGIN-VERISMART-->
+		<!-- ############################################################################################################-->
+		<vUrlVeriSmart>https://www.verismart.com.pe/verismart/login/index.php</vUrlVeriSmart>
+		<vUsuarioVeriSmart>rotativo.rpa</vUsuarioVeriSmart>
+		<vPassVeriSmart>Verisure2022*</vPassVeriSmart>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_DESCARGA-PORFOLIO-->
+		<!-- ############################################################################################################-->
+		<vSolicitudVeriSmart>registrotarjeta</vSolicitudVeriSmart>
+		<vEstadoVeriSmart>ingresado</vEstadoVeriSmart>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-BCP-->
+		<!-- ############################################################################################################-->
+		<vEmpresaBCP>VERISURE</vEmpresaBCP>
+		<vMontoBCP>s/ 0.00</vMontoBCP>
+		<vSolicitudBCP>AFILIAR</vSolicitudBCP>
+		<!-- ############################################################################################################-->
+		<!-- t_FW_ALTA-TRAMA-BBVA-->
+		<!-- ############################################################################################################-->
+		<vEmisorBBVA>68948</vEmisorBBVA>
+		<vServicioBBVA>006</vServicioBBVA>
+		<vAltaBBVA>ALTA</vAltaBBVA>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_FW_ALTA-TRAMA-SCB-->
+		<!-- ############################################################################################################-->
+		<vMonedaSCB>1</vMonedaSCB>
+		<vImporteSCB>0.00</vImporteSCB>
+		<vDatosSCB>2</vDatosSCB>
+		<vRespuestaSCB>0</vRespuestaSCB>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_DINNER-CLUB-LOGIN-->
+		<!-- ############################################################################################################-->
+		<vUrlDinner>https://comerciosdinersclub.pe/auth/login</vUrlDinner>
+		<vUsuarioDinner>RPAAFIL1</vUsuarioDinner>
+		<vPasswordDinner>Veri2023*</vPasswordDinner>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_DINNER-CLUB-PROCESS-->
+		<!-- ############################################################################################################-->
+		<vDNIDinner>00000000</vDNIDinner>
+		<vMontoDinner>2000</vMontoDinner>
+		<vTelefonoDinner>11111111</vTelefonoDinner>
+		<vEmailDinner>999999999</vEmailDinner>
+		<vErrorDinner>No se encontro datos del cliente</vErrorDinner>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_AMEX-LOGIN-->
+		<!-- ############################################################################################################-->
+		<vUrlAmex>https://www.amex-gca.com.pe/frmLogin.aspx</vUrlAmex>
+		<vUsuarioAmex>549068203</vUsuarioAmex>
+		<vPassAmex>4435411</vPassAmex>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA_TRAMA_AMEX-->
+		<!-- ############################################################################################################-->
+		<vNameAmex>Cliente</vNameAmex>
+		<vApellidoPAmex>Cliente</vApellidoPAmex>
+		<vApellidoMAmex>Cliente</vApellidoMAmex>
+		<vDNIAmex>00000000</vDNIAmex>
+		<vTelfAmex>1111111</vTelfAmex>
+		<vEmailAmex>notiene@hotmail.com</vEmailAmex>
+		<vDirecAmex>Lima</vDirecAmex>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-DESAFILIACION-->
+		<!-- ############################################################################################################-->
+		<vCodIntVisa>885</vCodIntVisa>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-AFILIACION-->
+		<!-- ############################################################################################################-->
+		<vMensualidadAfi>351</vMensualidadAfi>
+		<vDNIAfi>DNI</vDNIAfi>
+		<vDNIVisa>00000000</vDNIVisa>
+		<vTelfAfi>999999999</vTelfAfi>
+		<vEmailVisa>NOTIENE@HOTMAIL.COM</vEmailVisa>
+		<vCargoVisa>VARIABLE</vCargoVisa>
+		<vPeriodo>MENSUAL</vPeriodo>
+		<vMontoMax>2000.00</vMontoMax>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-LOGIN-->
+		<!-- ############################################################################################################-->
+		<vUrlVisa>https://pagoprogramado.niubiz.com.pe/comercio/login</vUrlVisa>
+		<vUsuarioVisa>VERRPA</vUsuarioVisa>
+		<vPassVisa>Verisure2024.</vPassVisa>
+		<vKeyCaptcha>e4ed20154a4093fe6377f855d039901c</vKeyCaptcha>
+		<!-- ############################################################################################################-->
+		<!-- TAREA t_PROCESS-SBN-->
+		<!-- ############################################################################################################-->
+		<vUsuarioSBN>C39854</vUsuarioSBN>
+		<vPassSBN>47434482</vPassSBN>
+		<!-- ############################################################################################################-->
+		<!-- TAREA DE APOYO a_FW_ALTA-TRAMA-VISA-WEB-REPORTES-->
+		<!-- ############################################################################################################-->
+		<vMontoMaxVisa>2000.0</vMontoMaxVisa>
+	<!-- =========================================================================================================== -->
+	<!-- FIN - VARIABLES PARA EL PROCESO -->
+	
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- [FINAL]: VARIABLES DEPENDIENTES DEL ENTORNO/AMBIENTE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- =========================================================================================================== -->
+	</Production>
+
+	<COMUN>
+<!-- =========================================================================================================== -->
+<!-- [INICIO]: VARIABLES COMUNES (INDEPENDIENTES DEL ENTORNO/AMBIENTE) ========================================= -->	
+<!-- =========================================================================================================== -->
+	
+<!-- UTILITARIO: u_FW_GET-XML-CONFIG -->	
+<!-- =========================================================================================================== -->
+	<!-- ############################################################################################################-->
+	<!-- VARIABLES UNICAS DEL PROCESO -->
+	<!-- ############################################################################################################-->
+		<vDisco>C:</vDisco>
+		<vCarpetaPrincipal>RPA</vCarpetaPrincipal>
+		<vCarpetaProyecto>01_REPORTE-AFILIACION</vCarpetaProyecto>
+		<vCarpetaInputs>INPUTS</vCarpetaInputs>
+		<vCarpetasLogs>LOGS</vCarpetasLogs>
+		<vCarpetaOutput>OUTPUT</vCarpetaOutput>
+		<vCarpetasTemp>TEMP</vCarpetasTemp>
+		<vCarpetasTemplates>TEMPLATES</vCarpetasTemplates>
+		<vCarpetaScreenshots>SCREENSHOTS</vCarpetaScreenshots>
+		<vCapetaScripts>SCRIPTS</vCapetaScripts>
+		<vProcessID>A001</vProcessID>
+		<vNombreBot>CONTROL-AFILIACIONES-VERISURE</vNombreBot>
+		<vNombreBot2>LECTURA-AFILIACIONES-VERISURE</vNombreBot2>
+		<vContRetry>3</vContRetry><!--cantidad de reintentos por secuencia -->
+		<vAntiCaptchaKey>e5015d858db310f2dd22efb88ab43874</vAntiCaptchaKey>
+		
+	<!-- ############################################################################################################-->
+	<!-- VARIABLES DE FROMATO FECHAS -->
+	<!-- ############################################################################################################-->
+		<vHoyFechaDiaFormatoDD>dd</vHoyFechaDiaFormatoDD>
+		<vHoyFechaMesFormatoMM>MM</vHoyFechaMesFormatoMM>
+		<vHoyFechaAnioFormatoYY>yy</vHoyFechaAnioFormatoYY>
+		<vHoyFechaAnioFormatoYYYY>yyyy</vHoyFechaAnioFormatoYYYY>
+		<vDateToday>yyyy/MM/dd</vDateToday>
+		<vAyerFechaDiaFormatoDD>dd</vAyerFechaDiaFormatoDD>
+		<vAyerFechaMesFormatoMM>MM</vAyerFechaMesFormatoMM>
+		<vAyerFechaAnioFormatoYY>yy</vAyerFechaAnioFormatoYY>
+		<vAyerFechaAnioFormatoYYYY>yyyy</vAyerFechaAnioFormatoYYYY>
+		<vDateYesterday>yyyy/MM/dd</vDateYesterday>
+	<!-- ############################################################################################################-->	
+	<!-- VARIABLES DE MESES DEL AÑO -->
+	<!-- ############################################################################################################-->	
+		<vMes01>Enero</vMes01>
+		<vMes02>Febrero</vMes02>
+		<vMes03>Marzo</vMes03>
+		<vMes04>Abril</vMes04>
+		<vMes05>Mayo</vMes05>
+		<vMes06>Junio</vMes06>
+		<vMes07>Julio</vMes07>
+		<vMes08>Agosto</vMes08>
+		<vMes09>Setiembre</vMes09>
+		<vMes10>Octubre</vMes10>
+		<vMes11>Noviembre</vMes11>
+		<vMes12>Diciembre</vMes12>
+	<!-- ############################################################################################################-->	
+	<!-- VARIABLES DE TIEMPOS DE ESPERA -->	
+	<!-- ############################################################################################################-->
+		<vWaitTimeXS>2</vWaitTimeXS>
+		<vWaitTimeS>5</vWaitTimeS>
+		<vWaitTimeM>10</vWaitTimeM>
+		<vWaitTimeL>30</vWaitTimeL>
+		<vWaitTimeXL>60</vWaitTimeXL>
+		<vWaitTimeXLL>120</vWaitTimeXLL>
+
+<!-- UTILITARIO: u_FW_VALIDATE-FOLDERS -->	
+<!-- =========================================================================================================== -->
+<!-- ############################################################################################################-->	
+	<!-- CARPETAS DEL AMBIENTE A ELIMINAR -->	
+	<!-- TIP: Son las carpetas que se crearan cuando se ejecute el bot, dentro de la instancia de ejecucion -->	
+	<!-- ############################################################################################################-->
+		<vNCarpetasAmbDelete>7</vNCarpetasAmbDelete> <!-- numero de carpetas a crear en el disco local -->
+		<vCarpetasAmbDelete> <!-- carpetas a eliminar en el disco local -->
+			<vCarpetaAmbDelete></vCarpetaAmbDelete>
+			<vCarpetaAmbDelete></vCarpetaAmbDelete>
+			<vCarpetaAmbDelete></vCarpetaAmbDelete>
+			<vCarpetaAmbDelete>jiiihih</vCarpetaAmbDelete>
+			<vCarpetaAmbDelete>TEMPLATES/</vCarpetaAmbDelete>
+			<vCarpetaAmbDelete>TEMP/</vCarpetaAmbDelete>
+			<vCarpetaAmbDelete></vCarpetaAmbDelete>
+		</vCarpetasAmbDelete>
+	<!-- ############################################################################################################-->	
+	<!-- CARPETAS DEL AMBIENTE -->	
+	<!-- TIP: Son las carpetas que se crearan cuando se ejecute el bot, dentro de la instancia de ejecucion -->	
+	<!-- ############################################################################################################-->
+		<vNCarpetasAmb>7</vNCarpetasAmb> <!-- numero de carpetas a crear en el disco local -->
+		<vCarpetasAmb> <!-- carpetas a crear en el disco local -->
+			<vCarpetaAmb>LOGS/</vCarpetaAmb>
+			<vCarpetaAmb>LOGS/SCREENSHOTS/</vCarpetaAmb>
+			<vCarpetaAmb>INPUTS/</vCarpetaAmb>
+			<vCarpetaAmb>INPUTS/SCRIPTS/</vCarpetaAmb>
+			<vCarpetaAmb>OUTPUT/</vCarpetaAmb>
+			<vCarpetaAmb>TEMP/</vCarpetaAmb>
+			<vCarpetaAmb>TEMPLATES/</vCarpetaAmb>
+		</vCarpetasAmb>
+	<!-- ############################################################################################################-->	
+	<!-- ARCHIVOS DEL AMBIENTE -->	
+	<!-- TIP: Son los archivos que se copiaran desde el control room hacia las carpetas de ambiente creadas -->	
+	<!-- ############################################################################################################-->
+		<vNArchivosAmb>0</vNArchivosAmb> <!-- numero de archivos a copiar en el ambiente -->
+		<vAmbiente> <!-- archivos a copiar en el disco local -->
+			<vArchAmb>
+				<vBase></vBase> <!-- Nombre de la ruta donde se sacaran las plantillas, debe estar definido en este mismo XML con un nodo mas -->
+				<vNombreArch></vNombreArch> <!-- Nombre del archivo -->
+				<vRutaDestino></vRutaDestino>  <!-- Carpeta dentro de la estructura local donde se dejará el archivo, esta carpeta debe estar creada como carpeta en el item anterior -->
+				<vNombreArchDest></vNombreArchDest> <!-- Nombre del archivo de destino, si es necesario cambiar el nombre de la plantilla se puede colocar un nombre aca, si se deja vacío se mantiene el nombre original -->
+			</vArchAmb>
+			<vArchAmb>
+				<vBase></vBase> <!-- Nombre de la ruta donde se sacaran las plantillas, debe estar definido en este mismo XML con un nodo mas -->
+				<vNombreArch></vNombreArch> <!-- Nombre del archivo -->
+				<vRutaDestino></vRutaDestino>  <!-- Carpeta dentro de la estructura local donde se dejará el archivo, esta carpeta debe estar creada como carpeta en el item anterior -->
+				<vNombreArchDest></vNombreArchDest> <!-- Nombre del archivo de destino, si es necesario cambiar el nombre de la plantilla se puede colocar un nombre aca, si se deja vacío se mantiene el nombre original -->
+			</vArchAmb>
+		</vAmbiente>
+	
+<!-- UTILITARIO: u_FW_GET-XML-EVENT  -->
+<!-- =========================================================================================================== -->
+	<!-- ############################################################################################################-->	
+	<!-- MENSAJERIA -->		
+	<!-- ############################################################################################################-->
+		<vArchivoLog>Logs\A041_Logs-Auditoria.csv</vArchivoLog>  <!-- lugar del archivo de logs -->		
+		<vArchivoLogError>Logs\A041_Logs-Error-Auditoria.csv</vArchivoLogError>  <!-- lugar del archivo de logs de Errores -->	
+		<vCarpetaPantallazos>Temp\Pantallazos\</vCarpetaPantallazos>  <!-- lugar del archivo de logs de Errores -->
+		<vSeparador>|=#</vSeparador>
+		<vArea>INF</vArea>
+	
+<!-- =========================================================================================================== -->
+<!-- [FINAL]: VARIABLES COMUNES (INDEPENDIENTES DEL ENTORNO/AMBIENTE) ========================================== -->	
+<!-- =========================================================================================================== -->
+	</COMUN>
+	
+	<!-- ============================================================================================================ -->
+	<!-- ################################# FIN: VARIABLES COMUNES  ################################################## -->
+	<!-- =========================================================================================================== -->
+</BOT>
